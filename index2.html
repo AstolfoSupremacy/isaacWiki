@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario con validaciones</title>
+	<!-- Incluir los archivos de Bootstrap -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script
+      src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+      
+    <!-- Integracion de CSS -->
+    <link rel="stylesheet" href="css/style_validador.css">
+</head>
+<body>
+    <ul>
+        <li><a href="http://127.0.0.1:5500/index.html"> Volver a la pagina principal</a>  </li>
+    </ul>
+  <div class="container" id="contenedor">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <!-- Inicio form -->
+            <form method="POST" id="formulario1">
+                <div class="form-group">
+                    <label for="id_txtNombre">Nombre</label>
+                    <input type="text" class="form-control" name="txtNombre" required=""
+                        id="id_txtNombre" placeholder="Ingrese Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="id_txtApellido">Apellido</label>
+                    <input type="text" class="form-control" name="txtApellido" required=""
+                        id="id_txtApellido" placeholder="Ingrese Apellido">
+                </div>
+                <div class="form-group">
+                    <label for="id_txtEmail">Email</label>
+                    <input type="email" name="txtEmail" class="form-control" id="id_txtEmail"
+                        placeholder="Ingrese su email aquí">
+                </div>
+                <div class="form-group">
+                    <label for="id_txtContrasena">Password</label>
+                    <input type="password" class="form-control" name="txtContrasena" required=""
+                        id="id_txtContrasena" placeholder="Ingrese contraseña">
+                </div>
+                <div class="form-group">
+                    <label for="id_txtRepetirContrasena">Repetir Contraseña</label>
+                    <input type="password" class="form-control" name="txtRepetirContrasena" required=""
+                        id="id_txtRepetirContrasena" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <button class="btn btn-info" type="button" name="showpassword" id="showpassword"
+                        value="Ver Password">Ver password</button>
+                    <button type="submit" class="btn btn-primary" id="btn-registrar" >Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Hacemos el llamado a los validadores, que estan en la carpeta js  -->
+<script src="js/validador.js" ></script>
+<script src="js/verPassword.js" ></script>
+</body>
+</html>

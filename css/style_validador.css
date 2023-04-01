@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-control {
+    width: 350px;
+    height: 40px;
+  }
+
+body {
+    background-image: url('../img/imagenes_vicente/1366_2000.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+#formulario1 {
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#formulario1 img {
+  max-width: 100%; /* Tamaño máximo de la imagen */
+}
