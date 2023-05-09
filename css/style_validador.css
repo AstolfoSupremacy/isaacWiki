@@ -21,11 +21,49 @@ body {
 
 
 #formulario1 {
-  background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+  background-color: #ffffffb3; /* Fondo semitransparente */
   padding: 20px;
   border-radius: 10px;
 }
 
 #formulario1 img {
   max-width: 100%; /* Tamaño máximo de la imagen */
+}
+
+/* Estilo para botón "Registrarse" */
+.btn-registrarse {
+  background-color: #d14a6c; /* Color de fondo */
+  border: none; /* Borde sin estilo */
+  color: white; /* Color de texto */
+  padding: 10px 20px; /* Espacio alrededor del texto */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Espacio entre botones */
+  cursor: pointer; /* Cursor apuntando */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.btn-registrarse:hover {
+  background-color: #ad2d53; /* Cambio de color de fondo al pasar el mouse */
+}
+
+/* Estilo para botón "Mostrar contraseña" */
+.btn-show-password {
+  background-color: #db833c; /* Color de fondo */
+  border: none; /* Borde sin estilo */
+  color: white; /* Color de texto */
+  padding: 10px 20px; /* Espacio alrededor del texto */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Espacio entre botones */
+  cursor: pointer; /* Cursor apuntando */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.btn-show-password:hover {
+  background-color: #965d14; /* Cambio de color de fondo al pasar el mouse */
 }
