@@ -1,24 +1,34 @@
-{% extends 'Registro/base.html'%}
+{% extends 'Registro/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style_trinket.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Listar trinket</title>
-  </head>
-
-  <body>
-    <h2>Lista de trinkets</h2>
-    {% for o in trinkets %}
-        <div>
-            <p>Nombre: {{ o.nombre }} </p>
-            <p>Descripcion: {{ o.descripcion }} </p>
-            <p>Categoria: {{ o.categoria }} </p>
+{% block contenido %}
+    <div class="content container">
+        <div class="rectangle">
+            <title>Listar trinket</title>
+            <h2 class="centered-title">Lista de trinkets</h2>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Categoría</th>
+                    <th>Acciones</th>
+                </tr>
+                {% for trinket in object_list %}
+                    <tr>
+                        <td>{{ trinket.nombre }}</td>
+                        <td>{{ trinket.descripcion }}</td>
+                        <td class="text-center">{{ trinket.categoria }}</td>
+                        <td class="action-buttons">
+                            <a href="{% url 'modificar_trinket' trinket.id %}" class="btn btn-modificar">Modificar</a>
+                            <a href="{% url 'eliminar_trinket' trinket.id %}" class="btn btn-eliminar">Eliminar</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
         </div>
-        <br>
-    {% endfor %}
-
-
-  </body>
-</html>
+    </div>
+{% endblock %}

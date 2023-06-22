@@ -8,12 +8,16 @@ urlpatterns = [
     path('items', views.items, name="items"), 
     path('personajes', views.personajes, name="personajes"), 
     path('servicio_web', views.servicio_web, name="servicio_web"), 
-    path('formulario', views.formulario, name="index2"), 
-    path('listar_trinket', views.listar_trinket, name="listar_trinket"), 
-    path('agregar_trinket', views.agregar_trinket, name="agregar_trinket"),
-    path('editar_trinket/<int:carrera_id>', views.editar_trinket ,name="editar_trinket"),
-    path('borrar_trinket/<int:carrera_id>', views.borrar_trinket, name="borrar_trinket"),
+    path('formulario', views.formulario, name="formulario"), 
+    # Clases Generics
     path('registrar', RegistroUsuario.as_view(), name="registrar"),
+    path('listar_trinket/', views.TrinketList.as_view(), name='listar_trinket'),
+    path('modificar_trinket/<int:pk>', views.TrinketUpdate.as_view(), name='modificar_trinket'),
+    path('eliminar_trinket/<int:pk>', views.TrinketDelete.as_view(), name='eliminar_trinket'),
+    path('agregar_trinket', views.TrinketCreate.as_view(), name="agregar_trinket"),
+
+    
+    
 ]
 
 

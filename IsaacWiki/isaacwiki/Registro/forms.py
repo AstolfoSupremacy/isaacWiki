@@ -11,16 +11,17 @@ class TrinketForm(forms.ModelForm):
 
         labels = {
             'nombre': 'Nombre',
-            'descripcion': 'descripcion',
-            'categoria': 'categoria',
+            'descripcion': 'Descripcion',
+            'categoria': 'Categoria',
 
 
         }
         widgets = {
             'nombre': forms.TextInput(attrs={'class': 'form-control'}),
             'descripcion': forms.TextInput(attrs={'class': 'form-control'}),
-            'categoria': forms.TextInput(attrs={'class': 'form-control'}),
+            'categoria': forms.Select(attrs={'class': 'form-control'}, choices=[(1, '1'), (2, '2'), (3, '3'), (4, '4')]),
                     }
+
 
 class RegistroForm(UserCreationForm):
 
