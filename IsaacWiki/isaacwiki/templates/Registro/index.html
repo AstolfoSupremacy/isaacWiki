@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Isaac wiki</title>
+  
+  <!-- Integraciones de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Integracion de CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- incorporamos jquery  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+        <img src="img/imagenes_vicente/Isaac.png" alt="Logo de mi sitio web" class="img-fluid" style="width: 40%;">
+    </a>
+    <!-- Botón para colapsar el navbar en dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Enlaces de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="paginas/personajes.html">Personajes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="paginas/bosses.html">Jefes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="paginas/items.html">Objetos</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="paginas/servicio_web.html">Services</a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="index2.html" class="btn btn-outline-primary my-2 my-sm-0 btn-login">Login</a>
+        </li>
+    </ul>
+    </nav>
+
+    <!-- Cabecera -->
+<header class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+        <h1>Bienvenido a la wiki de The Binding of Isaac  </h1>
+        <p>Recopilacion de informacion sobre personajes,jefes y objetos</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="paginas/items.html"><img src="img/imagenes_vicente/objetos.png" class="d-block w-100" alt="..."></a>
+      
+    </div>
+    <div class="carousel-item">
+      <a href="paginas/bosses.html"><img src="img/imagenes_vicente/Versus.png" class="d-block w-100" alt="..."></a>
+      
+    </div>
+    <div class="carousel-item">
+      <a href="paginas/personajes.html"><img src="img/imagenes_vicente/Personajes2.jpg" class="d-block w-100" alt="..."></a>
+      
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+<div class="spacer"></div>
+
+
+
+<!-- Agrega los enlaces a los archivos JavaScript de Bootstrap y jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+</body>
+</html>
